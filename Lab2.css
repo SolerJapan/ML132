@@ -1,0 +1,66 @@
+.Box {
+  top: 100px;
+  left: 500px;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-content: center;
+  position: absolute;
+}
+
+#box1 {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.Box:hover #box1 {
+    background-color: blue;
+    transform: rotate(90deg) translateY(90%);
+}
+#box2 {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.Box:hover #box2 {
+    background-color: red;
+    transform: rotate(-90deg) translateY(90%);
+}
+#box3 {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.Box:hover #box3 {
+    background-color: green;
+    transform: rotate(-90deg) translateY(-90%);
+}
+#box4 {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.Box:hover #box4 {
+    background-color: yellow;
+
+    transform: rotate(90deg) translateY(-90%);
+}
